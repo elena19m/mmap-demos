@@ -1,3 +1,10 @@
+These demos show the differences between copying a file using `mmap()` and `read/write()`.
+
+You should take into consideration testing the copying process:
+  - after dropping caches;
+  - on local storage;
+  - on shared storage (e.g., NFS).
+
 Copy file using:
    - `mmap` (map both files in memory and use `memcpy`)
    - `read/write`
